@@ -1,10 +1,19 @@
-<!DOCTYPE html><html lang="pt-br"><!-- Mirrored from kitfranciny.online/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Aug 2025 13:38:15 GMT --><head>
+<!DOCTYPE html><html lang="pt-br">
+<!-- Mirrored from kitfranciny.online/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Aug 2025 13:38:15 GMT -->
+<head>
   <meta charset="UTF-8">
   <title>
  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+  <!-- Redirect to captcha if not already verified -->
+  <script>
+    // Check if user has already passed captcha
+    if (!sessionStorage.getItem('captchaVerified')) {
+      // Redirect to captcha page
+      window.location.href = 'captcha.html';
+    }
+  </script>
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com/"></script>
@@ -159,12 +168,12 @@
   <div class="relative w-full max-w-5xl mx-auto my-6">
     <div class="swiper main-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="1" alt="Imagem 1"></div>
-        <div class="swiper-slide"><img src="1.1" alt="Imagem 2"></div>
-        <div class="swiper-slide"><img src="1.3" alt="Imagem 3"></div>
-        <div class="swiper-slide"><img src="1.2" alt="Imagem 4"></div>
-        <div class="swiper-slide"><img src="1.5" alt="Imagem 5"></div>
-        <div class="swiper-slide"><img src="1.6" alt="Imagem 6"></div>
+        <div class="swiper-slide"><img src="images/1" alt="Imagem 1"></div>
+        <div class="swiper-slide"><img src="images/1.1" alt="Imagem 2"></div>
+        <div class="swiper-slide"><img src="images/1.3" alt="Imagem 3"></div>
+        <div class="swiper-slide"><img src="images/1.2" alt="Imagem 4"></div>
+        <div class="swiper-slide"><img src="images/1.5" alt="Imagem 5"></div>
+        <div class="swiper-slide"><img src="images/1.6" alt="Imagem 6"></div>
       </div>
 
       <!-- PAGINAÇÃO -->
@@ -202,7 +211,7 @@
   <div class="px-4 pb-4 pt-2" style="display: none;">
     <div class="swiper thumb-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide w-16 h-16"><img src="1.1" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbe754_02.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbe841_03.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbe94d_04.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbea30_05.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbeb3d_06.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbec4f_07.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="688301ebcf6a3_Imagem%20do%20WhatsApp%20de%202025-07-25%20%C3%A0%28s%29%2000.16.27_ddbd2f68.html" class="w-full h-full object-cover rounded"></div>
+        <div class="swiper-slide w-16 h-16"><img src="images/1.1" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbe754_02.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbe841_03.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbe94d_04.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbea30_05.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbeb3d_06.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/6882ffbbbec4f_07.jpg" class="w-full h-full object-cover rounded"></div><div class="swiper-slide w-16 h-16"><img src="images/688301ebcf6a3_Imagem%20do%20WhatsApp%20de%202025-07-25%20%c3%a0(s)%2000.16.27_ddbd2f68.html" class="w-full h-full object-cover rounded"></div>
       </div>
     </div>
   </div>
@@ -379,7 +388,7 @@
       <div class="w-6 h-6 mr-2 relative flex-shrink-0 rounded-full bg-amber-700"> <!-- Círculo sólido marrom -->
         <!-- Checkmark branco no centro -->
         <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 text-white" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
         </svg>
       </div>
 
@@ -389,7 +398,7 @@
 
     <!-- Seta indicando que é clicável -->
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
     </svg>
   </div>
 
@@ -401,7 +410,7 @@
     <div class="flex items-start text-gray-800">
       <!-- Checkmark verde -->
       <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
       </svg>
       <span>Devolução gratuita</span>
     </div>
@@ -409,7 +418,7 @@
     <!-- Item 2: Cupom por perda ou dano (com quebra de linha) -->
     <div class="flex items-start text-gray-800">
       <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
       </svg>
       <span>Cupom por perda ou<br>dano</span> <!-- Quebra de linha para combinar com a foto -->
     </div>
@@ -417,7 +426,7 @@
     <!-- Item 3: Pagamento seguro -->
     <div class="flex items-start text-gray-800">
       <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
       </svg>
       <span>Pagamento seguro</span>
     </div>
@@ -425,7 +434,7 @@
     <!-- Item 4: Cupom por atraso na coleta (com quebra de linha) -->
     <div class="flex items-start text-gray-800">
       <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
       </svg>
       <span>Cupom por atraso na<br>coleta</span> <!-- Quebra de linha para combinar com a foto -->
     </div>
@@ -443,7 +452,7 @@
   <div class="flex items-center justify-between mb-3">
     <h3 class="font-medium text-gray-900">Ofertas</h3>
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
     </svg>
   </div>
 
@@ -456,7 +465,7 @@
     <!-- Botão alterado para "Aplicado" com ícone de check -->
     <div class="bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-md text-sm flex items-center gap-2 cursor-default"> <!-- Fundo cinza para "desabilitado/aplicado" -->
       <svg class="h-4 w-4 text-green-500" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
       </svg>
       Aplicado
     </div>
@@ -588,9 +597,9 @@
       <div class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
       <p class="text-sm text-gray-700 mb-2">O som é tão potente que parece uma caixa de som profissional! A conexão Bluetooth é estável e o carregamento é bem rápido. Perfeita pra qualquer ocasião.</p>
       <div class="flex gap-2 flex-wrap">
-        <img src="91" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
-        <img src="92" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
-        <img src="93" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
+        <img src="images/91" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
+        <img src="images/92" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
+        <img src="images/93" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
       </div>
     </div>
 
@@ -624,7 +633,7 @@
       <div class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
       <p class="text-sm text-gray-700 mb-2">Amei! Vem super bem embalado 😍 </p>
       <div class="flex gap-2 flex-wrap">
-        <img src="222" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
+        <img src="images/222" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
       </div>
     </div>
 
@@ -640,7 +649,7 @@
       <div class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
       <p class="text-sm text-gray-700 mb-2">Comprei pra usar em churrascos e viagens e não me decepcionei. O design é robusto, o áudio enche o ambiente e a conexão Bluetooth é estável. Carregamento rápido e acabamento premium. Vale cada centavo.</p>
       <div class="flex gap-2 flex-wrap">
-        <img src="111" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
+        <img src="images/111" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
       </div>
     </div>
 
@@ -664,7 +673,7 @@
     <!-- REVIEW 6 -->
     <div class="bg-gray-50 p-4 rounded-lg">
       <div class="flex items-start gap-3 mb-2">
-        <img src="review4" alt="Rafaela Lima" class="w-10 h-10 rounded-full object-cover">
+        <img src="images/review4" alt="Rafaela Lima" class="w-10 h-10 rounded-full object-cover">
         <div>
           <p class="font-medium text-gray-800">Rafaela Lima</p>
           <p class="text-xs text-green-500">há 1 hora</p>
@@ -673,14 +682,14 @@
       <div class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
       <p class="text-sm text-gray-700 mb-2">Perfeita para festas ao ar livre. O som é muito potente, o alcance Bluetooth surpreende e não temo deixar perto da água. Bateria segura a maratona inteira. Compra certeira pra quem gosta de som forte e sem dor de cabeça</p>
       <div class="flex gap-2 flex-wrap">
-        <img src="review" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
+        <img src="images/review" alt="Foto da avaliação" class="w-16 h-16 rounded-lg object-cover">
       </div>
     </div>
 
     <!-- REVIEW 7 -->
     <div class="bg-gray-50 p-4 rounded-lg">
       <div class="flex items-start gap-3 mb-2">
-        <img src="review1" alt="Beatriz Souza" class="w-10 h-10 rounded-full object-cover">
+        <img src="images/review1" alt="Beatriz Souza" class="w-10 h-10 rounded-full object-cover">
         <div>
           <p class="font-medium text-gray-800">Beatriz Souza</p>
           <p class="text-xs text-green-500">há 1 hora</p>
@@ -734,12 +743,16 @@
       <!-- Logo com Efeito 3D -->
       <div class="relative">
         <div class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 p-0.5">
-          <img src="logo" alt="JBL Eletronicos Tiktok Shops" class="w-full h-full rounded-full object-cover border-2 border-white shadow-sm transition-transform duration-300 group-hover:scale-105">
+          <img
+            src="images/logo"
+            alt="JBL Eletronicos Tiktok Shops"
+            class="w-full h-full rounded-full object-cover border-2 border-white shadow-sm transition-transform duration-300 group-hover:scale-105"
+          >
         </div>
         <!-- Badge de Verificação -->
         <div class="absolute -bottom-1 -right-1 bg-blue-500 rounded-full p-1 shadow-md">
           <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
           </svg>
         </div>
       </div>
@@ -758,7 +771,8 @@
     </div>
 
     <!-- Botão Seguir com Animação -->
-    <button id="seguirBtn" class="bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 text-blue-700 font-semibold text-sm px-4 py-2 rounded-xl border border-blue-200 transition-all duration-300 hover:scale-105 hover:shadow-md">
+    <button id="seguirBtn"
+            class="bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 text-blue-700 font-semibold text-sm px-4 py-2 rounded-xl border border-blue-200 transition-all duration-300 hover:scale-105 hover:shadow-md">
       <span class="flex items-center">
         <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -842,25 +856,25 @@
     <ul class="mt-3 space-y-2 text-sm text-gray-700">
       <li class="flex items-start gap-3">
         <svg class="w-5 h-5 flex-shrink-0 text-green-500 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 01.023 1.39l-7.5 8a1 1 0 01-1.43.042L3.293 10.7a1 1 0 011.414-1.414l3.268 3.268L15.3 5.32a1 1 0 01.023-1.414z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 01.023 1.39l-7.5 8a1 1 0 01-1.43.042L3.293 10.7a1 1 0 011.414-1.414l3.268 3.268L15.3 5.32a1 1 0 01.023-1.414z" clip-rule="evenodd"/>
         </svg>
         <span>1 x Caixa de Som JBL Boombox 4 Original</span>
       </li>
       <li class="flex items-start gap-3">
         <svg class="w-5 h-5 flex-shrink-0 text-green-500 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 01.023 1.39l-7.5 8a1 1 0 01-1.43.042L3.293 10.7a1 1 0 011.414-1.414l3.268 3.268L15.3 5.32a1 1 0 01.023-1.414z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 01.023 1.39l-7.5 8a1 1 0 01-1.43.042L3.293 10.7a1 1 0 011.414-1.414l3.268 3.268L15.3 5.32a1 1 0 01.023-1.414z" clip-rule="evenodd"/>
         </svg>
         <span>1 x Cabo de carregamento USB-C</span>
       </li>
       <li class="flex items-start gap-3">
         <svg class="w-5 h-5 flex-shrink-0 text-green-500 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 01.023 1.39l-7.5 8a1 1 0 01-1.43.042L3.293 10.7a1 1 0 011.414-1.414l3.268 3.268L15.3 5.32a1 1 0 01.023-1.414z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 01.023 1.39l-7.5 8a1 1 0 01-1.43.042L3.293 10.7a1 1 0 011.414-1.414l3.268 3.268L15.3 5.32a1 1 0 01.023-1.414z" clip-rule="evenodd"/>
         </svg>
         <span>1 x Manual do usuário</span>
       </li>
       <li class="flex items-start gap-3">
         <svg class="w-5 h-5 flex-shrink-0 text-green-500 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 01.023 1.39l-7.5 8a1 1 0 01-1.43.042L3.293 10.7a1 1 0 011.414-1.414l3.268 3.268L15.3 5.32a1 1 0 01.023-1.414z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 01.023 1.39l-7.5 8a1 1 0 01-1.43.042L3.293 10.7a1 1 0 011.414-1.414l3.268 3.268L15.3 5.32a1 1 0 01.023-1.414z" clip-rule="evenodd"/>
         </svg>
         <span>Garantia oficial do fabricante</span>
       </li>
@@ -949,7 +963,7 @@
       <div class="bg-gray-50 rounded-xl p-3 hover:bg-gray-50/80 transition-colors">
         <p class="font-semibold text-sm text-gray-900 mb-2 flex items-center">
           <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
           </svg>
           Compre
         </p>
@@ -963,7 +977,7 @@
       <div class="bg-gray-50 rounded-xl p-3 hover:bg-gray-50/80 transition-colors">
         <p class="font-semibold text-sm text-gray-900 mb-2 flex items-center">
           <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
           </svg>
           Ganhe
         </p>
@@ -977,7 +991,7 @@
       <div class="bg-gray-50 rounded-xl p-3 hover:bg-gray-50/80 transition-colors">
         <p class="font-semibold text-sm text-gray-900 mb-2 flex items-center">
           <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
           </svg>
           Sobre
         </p>
@@ -991,7 +1005,7 @@
       <div class="bg-gray-50 rounded-xl p-3 hover:bg-gray-50/80 transition-colors">
         <p class="font-semibold text-sm text-gray-900 mb-2 flex items-center">
           <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
           </svg>
           Suporte
         </p>
@@ -1006,7 +1020,7 @@
     <div class="bg-gray-50 rounded-xl p-3 mb-6">
       <p class="font-semibold text-sm text-gray-900 mb-2 flex items-center">
         <svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
         </svg>
         Política & Legal
       </p>
@@ -1087,7 +1101,7 @@
     <!-- Loja -->
     <div class="flex flex-col items-center text-xs text-gray-600">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3"></path>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3"/>
       </svg>
       <span class="text-xs">Loja</span>
     </div>
@@ -1095,7 +1109,7 @@
     <!-- Chat -->
     <div class="flex flex-col items-center text-xs text-gray-600">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-3.39-.57l-4.5 1.07 1.08-3.24C4.37 15.93 3 14.08 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-3.39-.57l-4.5 1.07 1.08-3.24C4.37 15.93 3 14.08 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
       </svg>
       <span class="text-xs">Chat</span>
     </div>
@@ -1105,12 +1119,16 @@
 <div class="flex items-center gap-2 w-full max-w-[65%]">
 
     <!-- Botão Adicionar ao carrinho (cinza claro) -->
-  <button type="button" onclick="abrirModal()" class="inline-flex items-center justify-center h-11 px-3 py-2 rounded-lg bg-gray-100 text-gray-900 text-sm font-medium shadow-sm active:scale-[.98] whitespace-nowrap transition-colors duration-200 flex-[1.2]">
+  <button type="button"
+          onclick="abrirModal()"
+          class="inline-flex items-center justify-center h-11 px-3 py-2 rounded-lg bg-gray-100 text-gray-900 text-sm font-medium shadow-sm active:scale-[.98] whitespace-nowrap transition-colors duration-200 flex-[1.2]">
     <span class="text-sm leading-none text-center">Adicionar<br>ao carrinho</span>
   </button>
 
   <!-- Botão Comprar com Cupom (COR OFICIAL TIKTOK SHOP) -->
-  <button type="button" onclick="abrirModal()" class="inline-flex items-center justify-center h-12 px-4 py-3 rounded-lg bg-[#FF0050] hover:bg-[#e60049] text-white text-sm font-semibold uppercase tracking-wide shadow-md active:scale-[.98] whitespace-nowrap transition-all duration-200 flex-[1.8]">
+  <button type="button"
+          onclick="abrirModal()"
+          class="inline-flex items-center justify-center h-12 px-4 py-3 rounded-lg bg-[#FF0050] hover:bg-[#e60049] text-white text-sm font-semibold uppercase tracking-wide shadow-md active:scale-[.98] whitespace-nowrap transition-all duration-200 flex-[1.8]">
     <span class="text-sm leading-none text-center">Comprar</span>
   </button>
 </div>
@@ -1120,7 +1138,8 @@
   <div class="bg-white p-5 rounded-2xl w-11/12 max-w-md relative shadow-xl">
 
     <!-- BOTÃO FECHAR -->
-    <button onclick="fecharModal()" class="absolute top-2 right-3 text-gray-500 hover:text-red-600 text-2xl font-bold">×</button>
+    <button onclick="fecharModal()"
+            class="absolute top-2 right-3 text-gray-500 hover:text-red-600 text-2xl font-bold">×</button>
 
     <!-- TÍTULO -->
     <h2 id="div_ors_1" class="text-xl font-bold text-gray-800 text-center mb-4">
@@ -1131,7 +1150,9 @@
     <div id="colors-list" class="grid grid-cols-2 gap-3 px-2 mb-4"></div>
 
     <!-- BOTÃO DE CHECKOUT -->
-    <button id="confirmCheckoutBtn" class="w-full bg-gray-400 text-white font-semibold py-3 rounded-lg cursor-not-allowed transition-all" disabled="">
+    <button id="confirmCheckoutBtn"
+            class="w-full bg-gray-400 text-white font-semibold py-3 rounded-lg cursor-not-allowed transition-all"
+            disabled>
       Selecione uma cor
     </button>
   </div>
@@ -1288,6 +1309,5 @@ function goToCheckout() {
       }
     });
   </script>
-
-
-</div></div></div></section></div></div></body></html>
+</body>
+</html>
